@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0B22C5C1BA4865500580BFD /* Example-swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B22C5B1BA4865500580BFD /* Example-swift.swift */; settings = {ASSET_TAGS = (); }; };
 		D4D3FC551BA482A600CE71EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D3FC541BA482A600CE71EE /* main.m */; };
 		D4D3FC581BA482A600CE71EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D3FC571BA482A600CE71EE /* AppDelegate.m */; };
 		D4D3FC5B1BA482A600CE71EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D3FC5A1BA482A600CE71EE /* ViewController.m */; };
@@ -16,7 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D4D3FC501BA482A600CE71EE /* Example Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0B22C5B1BA4865500580BFD /* Example-swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Example-swift.swift"; sourceTree = "<group>"; };
+		D4D3FC501BA482A600CE71EE /* ExampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4D3FC541BA482A600CE71EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D4D3FC561BA482A600CE71EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D4D3FC571BA482A600CE71EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -50,7 +52,7 @@
 		D4D3FC511BA482A600CE71EE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D4D3FC501BA482A600CE71EE /* Example Project.app */,
+				D4D3FC501BA482A600CE71EE /* ExampleProject.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +60,7 @@
 		D4D3FC521BA482A600CE71EE /* Example Project */ = {
 			isa = PBXGroup;
 			children = (
+				A0B22C5B1BA4865500580BFD /* Example-swift.swift */,
 				D4D3FC561BA482A600CE71EE /* AppDelegate.h */,
 				D4D3FC571BA482A600CE71EE /* AppDelegate.m */,
 				D4D3FC591BA482A600CE71EE /* ViewController.h */,
@@ -82,9 +85,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D4D3FC4F1BA482A600CE71EE /* Example Project */ = {
+		D4D3FC4F1BA482A600CE71EE /* ExampleProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4D3FC671BA482A600CE71EE /* Build configuration list for PBXNativeTarget "Example Project" */;
+			buildConfigurationList = D4D3FC671BA482A600CE71EE /* Build configuration list for PBXNativeTarget "ExampleProject" */;
 			buildPhases = (
 				D4D3FC4C1BA482A600CE71EE /* Sources */,
 				D4D3FC4D1BA482A600CE71EE /* Frameworks */,
@@ -94,9 +97,9 @@
 			);
 			dependencies = (
 			);
-			name = "Example Project";
+			name = ExampleProject;
 			productName = "Example Project";
-			productReference = D4D3FC501BA482A600CE71EE /* Example Project.app */;
+			productReference = D4D3FC501BA482A600CE71EE /* ExampleProject.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,6 +108,7 @@
 		D4D3FC481BA482A600CE71EE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "David Aghassi";
 				TargetAttributes = {
@@ -113,7 +117,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D4D3FC4B1BA482A600CE71EE /* Build configuration list for PBXProject "Example Project" */;
+			buildConfigurationList = D4D3FC4B1BA482A600CE71EE /* Build configuration list for PBXProject "ExampleProject" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -126,7 +130,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D4D3FC4F1BA482A600CE71EE /* Example Project */,
+				D4D3FC4F1BA482A600CE71EE /* ExampleProject */,
 			);
 		};
 /* End PBXProject section */
@@ -149,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0B22C5C1BA4865500580BFD /* Example-swift.swift in Sources */,
 				D4D3FC5B1BA482A600CE71EE /* ViewController.m in Sources */,
 				D4D3FC581BA482A600CE71EE /* AppDelegate.m in Sources */,
 				D4D3FC551BA482A600CE71EE /* main.m in Sources */,
@@ -261,10 +266,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Example Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "aghassi.Example-Project";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ExampleProject;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -272,17 +281,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Example Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "aghassi.Example-Project";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ExampleProject;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D4D3FC4B1BA482A600CE71EE /* Build configuration list for PBXProject "Example Project" */ = {
+		D4D3FC4B1BA482A600CE71EE /* Build configuration list for PBXProject "ExampleProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4D3FC651BA482A600CE71EE /* Debug */,
@@ -291,13 +303,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4D3FC671BA482A600CE71EE /* Build configuration list for PBXNativeTarget "Example Project" */ = {
+		D4D3FC671BA482A600CE71EE /* Build configuration list for PBXNativeTarget "ExampleProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4D3FC681BA482A600CE71EE /* Debug */,
 				D4D3FC691BA482A600CE71EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

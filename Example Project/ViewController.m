@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ExampleProject-Swift.h"
 
 @interface ViewController ()
 
@@ -16,6 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    Example * exampleObj = [[Example alloc] init];
+    [exampleObj printSomething:@"This is printing"];
     // Do any additional setup after loading the view, typically from a nib.
 }
 

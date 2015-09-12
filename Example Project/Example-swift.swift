@@ -9,5 +9,9 @@
 import Foundation
 
 @objc public class Example: NSObject {
+
+    public func printSomething(text: String) {
+        print(text);
+    }
     
 }
